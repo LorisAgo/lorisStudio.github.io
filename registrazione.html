@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <p>Acquista il <a href="#"> mio corso</a></p>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="articolo.html">Articolo</a></li>
+          <li><a href="registrazione.html">Registrazione</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <h1>Registrazione</h1>
+    <form
+      action="registrazione.php"
+      method="post"
+      style="display: flex; flex-direction: column"
+    >
+      <div>
+        <legend>Dati anagrafici</legend>
+        <label for="nome">Nome</label>
+        <input
+          type="text"
+          id="name"
+          name="nome"
+          placeholder="Inserisci il tuo nome"
+          required
+        />
+      </div>
+      <div>
+        <label for="cognome">Cognome</label>
+        <input
+          type="text"
+          id="cognome"
+          name="cognome"
+          placeholder="Inserisci il tuo cognome"
+          required
+        />
+      </div>
+      <div>
+        <label for="nascita" id="dataNascita" name="dataNascita"
+          >Data di nascita</label
+        >
+        <input type="date" name="dataNascita" id="dataNascita" required />
+      </div>
+      <div>
+        <label for="codiceFiscale">Codice Fiscale</label>
+        <input
+          type="text"
+          name="codiceFiscale"
+          id="codiceFiscale"
+          placeholder="es. ABCDEF12G34H567I"
+          maxlength="16"
+          minlength="16"
+          style="text-transform: uppercase"
+          required
+        />
+      </div>
+      <div>
+        <label for="città">Città</label>
+        <select name="città" id="città" name="città">
+          <option value="">Seleziona la città</option>
+          <option value="rome">Roma</option>
+          <option value="milan">Milano</option>
+          <option value="genoa">Genova</option>
+        </select>
+      </div>
+      <div>
+        <label for="genere">Genere</label>
+        <select name="genere" id="genere">
+          <option value="">Selezione il tuo genere</option>
+          <option value="uomo">Uomo</option>
+          <option value="donna">Donna</option>
+        </select>
+      </div>
+
+      <legend>Contatti</legend>
+      <div>
+        <label for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Inserisci la mail"
+        />
+      </div>
+      <div>
+        <label for="tel">Telefono</label>
+        <input
+          type="tel"
+          id="tel"
+          name="tel"
+          placeholder="Inserisci il cellulare"
+        />
+      </div>
+      <div>
+        <label for="password">Password</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          maxlength="24"
+          minlength="8"
+          required
+        />
+      </div>
+      <div>
+        <label for="confermaPassord">Conferma Password</label>
+        <input
+          type="password"
+          name="confermaPassord"
+          id="confermaPassord"
+          maxlength="24"
+          minlength="8"
+          required
+        />
+      </div>
+      <div>
+        <input type="submit" />
+        <input type="reset" />
+      </div>
+    </form>
+
+    <hr />
+
+    <footer>
+      <span>Contatti</span>
+      <a href="tel:+3881873299">Chiamami</a>
+      <a href="mailto:lokart100@gmail.com">Contattami per email</a>
+    </footer>
+  </body>
+</html>
